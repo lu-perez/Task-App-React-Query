@@ -15,7 +15,7 @@ const AddTask = () => {
     mutationFn: createTask,
     onSuccess: (newTask: Task) => {
       queryClient.setQueryData(["tasks", newTask._id], newTask);
-      navigate(`/tasks/${newTask._id}`);
+      navigate(`/task/${newTask._id}`);
     },
   });
 

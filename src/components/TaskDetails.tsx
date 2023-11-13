@@ -5,7 +5,7 @@ const TaskDetails = () => {
 
   return (
     <>
-      <div>task id: {taskId}</div>;
+      <div>task id: {taskId}</div>
     </>
   );
 };
