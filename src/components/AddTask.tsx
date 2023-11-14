@@ -34,7 +34,7 @@ const AddTask = () => {
       <form onSubmit={handleSubmit}>
         <input type="text" ref={titleRef} />
         <input type="text" ref={descriptionRef} />
-        <button>Add Task</button>
+        <button disabled={status === 'pending'}>Add Task</button>
       </form>
     </>
   );
